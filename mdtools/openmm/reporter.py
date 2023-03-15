@@ -1,7 +1,11 @@
 import h5py
 import numpy as np
 from typing import Optional, List
-import openmm.unit as u
+# # Original:
+# import openmm.unit as u
+# For OpenMM<=7.5:
+import simtk.unit as u
+
 import MDAnalysis
 from MDAnalysis.analysis import distances, rms
 from mdtools.analysis.order_parameters import fraction_of_contacts

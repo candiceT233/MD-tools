@@ -1,8 +1,14 @@
 from tqdm import tqdm
 import shutil
 from pathlib import Path
-import openmm.unit as u
-import openmm.app as app
+
+# # Original:
+# import openmm.unit as u
+# import openmm.app as app
+# For OpenMM<=7.5:
+import simtk.unit as u
+import simtk.openmm.app as app
+
 from mdtools.openmm.sim import configure_simulation
 
 

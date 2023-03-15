@@ -1,9 +1,15 @@
 import random
 from pathlib import Path
 from typing import Optional, Tuple, Union
-import openmm
-import openmm.unit as u
-import openmm.app as app
+# For OpenMM<=7.5:
+import simtk.openmm as openmm
+import simtk.unit as u
+import simtk.openmm.app as app
+
+# # Original:
+# import openmm
+# import openmm.unit as u
+# import openmm.app as app
 
 PathLike = Union[str, Path]
 
